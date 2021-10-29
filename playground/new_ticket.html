@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ticket BAZAAR | Tickets</title>
+    <link rel="stylesheet" href="../lib/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="images/ticket.svg"/>
+</head>
+
+<body style="font-family: 'Work Sans', sans-serif;">
+
+    <!-- Fixed navbar -->
+    <div id="eventsNav" class="navbar navbar-inverse navbar-fixed-top navbar-expand-md" role="navigation">
+        <div class="container" style="border:transparent;">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="small-logo-container">
+                    <a id="eventsNavLogo" class="small-logo" href="index.html">Ticket
+                        <i class="fas fa-ticket-alt"></i> BAZAAR</a>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="events.html">Events</a>
+                    </li>
+                    <li class="active">
+                        <a href="tickets.html">Tickets</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+
+    <div class="row">
+
+        <!-- TITLE -->
+        <div class="col-12 col-md-6 m-5 p-5 mx-auto">
+            <h1>
+                <strong>Check out the actual tickets</strong> | Arts and Theatre | Festivals and Fairs</h1>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, provident iste et quisquam, obcaecati unde repudiandae
+                earum optio libero id explicabo inventore repellat fuga illo dolorem eligendi vitae consequatur pariatur
+                reiciendis sequi.
+            </p>
+            <hr>
+        </div>
+    </div>
+
+
+    <!-- NEW TICKET -->
+    <div class="row justify-content-center mb-5">
+
+
+        <div class="col-6">
+            <h5 style="font-size: 20px;" class="modal-title" id="exampleModalLabel">
+                <i class="fas fa-plus"></i>
+                <strong>Add new ticket for sale</strong>
+            </h5>
+
+        </div>
+
+    </div>
+    <div class="row justify-content-center mb-3">
+        <div class="col-6">
+
+            <form id="new-ticket-form" novalidate>
+                <!-- ID -->
+                <!-- <div class="form-group mb-3">
+                    <label for="ticket-id">Ticket ID</label>
+                    <input name="id" id="ticket-id" class="form-control" type="text" placeholder="Ticket ID" required>
+                </div> -->
+                <!-- event -->
+                <div class="form-group mb-3">
+                    <label for="event-name">Event name</label>
+                    <input name="event" id="event-name" class="form-control" type="text" placeholder="Event name" required>
+                </div>
+                <!-- genre -->
+                <div class="form-group mb-3 pb-3">
+                    <label for="genre">Please choose the genre of your event</label>
+                    <select name="genre" id="genre" class="custom-select" style="height: 30px;" required>
+                        <option value="Ballet">Ballet</option>
+                        <option value="Concert">Concert</option>
+                        <option value="Exhibition">Exhibition</option>
+                        <option value="Theatre">Theatre</option>
+                    </select>
+
+                </div>
+
+                <!-- date -->
+                <div class="form-group mb-3">
+                    <label for="dateofevent">
+                        <i class="far fa-calendar-alt"></i> Date</label>
+                    <br>
+                    <input name="date" type="datetime-local" id="dateofevent" required>
+                </div>
+
+                <!-- location -->
+                <div class="form-group mb-3 pb-3">
+                    <label for="location">
+                        <i class="fas fa-map-marker-alt"></i> Location</label>
+                    <select name="location" id="location" class="custom-select" style="height: 30px;" required>
+                        <option value="Museum of Modern Arts">Museum of Modern Arts</option>
+                        <option value="National Gallery">National Gallery</option>
+                        <option value="Royal Ballet London">Royal Ballet London</option>
+                        <option value="The Old Vic Theatre">The Old Vic Theatre</option>
+                        <option value="Royal Albert Hall">Royal Albert Hall</option>
+                        <option value="The British Museum">The British Museum</option>
+                    </select>
+
+                </div>
+
+                <!-- Seller -->
+                <div class="form-group mb-3">
+                    <label for="seller">
+                        <i class="fas fa-user-tie"></i> Seller</label>
+                    <input name="seller" id="seller" class="form-control" type="text" placeholder="Seller" required>
+                </div>
+
+                <!-- how many? -->
+                <div class="form-group mb-3">
+                    <label for="quantity">How many tickets would you like to sell?</label>
+                    <input name="quantity" id="quantity" class="form-control" type="number" placeholder="How many tickets would you like to sell?"
+                        required>
+                </div>
+
+                <!-- submit button -->
+                <div class="row justify-content-center mt-5">
+                    <div class="col-6 text-center">
+                        <input type="submit" class="btn btn-sm btn-dark newTicket" value="Save"></input>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+        <div class="col-7 mt-5" id="ticket-list">
+            <pre></pre>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="template" style="display: none;">
+        <table>
+            <tr class="parentTR">
+                <td></td>
+                <th scope="row" class="ticketvalue"></th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+            </tr>
+
+        </table>
+    </div>
+    <div style="height: 60px;">
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="eventsFooter" class="mt-5">
+        <div class="row justify-content-center">
+
+            <div class="col-3">
+                <p>
+                    <strong>HELP</strong>
+                </p>
+                <p>Customer Service
+                    <br> Terms and Consitions</p>
+            </div>
+            <div class="col-3">
+                <p>
+                    <strong>CONTACT US</strong>
+                </p>
+                <p>Mail us
+                    <br> Visit us</p>
+            </div>
+
+            <div class="col-3">
+                <p>
+                    <strong>Sign Up for the newsletter</strong> Lorem ipsum dolor sit.</p>
+                <form class="row">
+                    <div class="col-4">
+                        <button type="submit" class="btn btn-light">JOIN US</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row footer-stuff justify-content-center pt-5">
+            <div class="col-6">
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/popper.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="../js/ticketfunctions.js"></script>
+
+
+    <!-- PLAYGROUND SCRIPTS -->
+    <script type="text/javascript">
+
+        // server URL
+        var RESTURL = "http://localhost:3000";
+
+        // disable input while server is slow
+        function disableInputs(inputs) {
+            inputs.prop('disabled', true);
+        }
+
+        function enableInputs(inputs) {
+            inputs.prop('disabled', false);
+        }
+
+        // show alerts after submit
+        function showAlert(beforeElem, type, text) {
+            var formAlertId = "form-alert";
+
+            $("#" + formAlertId).remove();
+
+            $('<div class="alert alert-' + type + '" id="' + formAlertId + '" role="alert">' + text + '</div>').insertBefore(beforeElem).fadeIn();
+
+            setTimeout(function () {
+                $("#" + formAlertId).fadeOut(function () {
+                    $(this).remove();
+                });
+            }, 3000);
+        }
+
+        function refreshTicketList() {
+            $.getJSON(RESTURL + "/tickets?_sort=id&_order=desc").done(
+                function (ticketList) {
+                    $('#ticket-list > pre')[0].innerText = JSON.stringify(ticketList, null, 2);
+                }
+            );
+        }
+
+        //////////////////
+        // SUBMIT FORM //
+        /////////////////
+
+        $(document).ready(function () {
+            // load ticket list
+            refreshTicketList();
+
+            $("#new-ticket-form").submit(function (event) {
+                event.preventDefault();
+
+                var newTicketFormElem = $(this);
+                var newTicketFormNativeElem = newTicketFormElem[0];
+
+                // check html5 validator
+                if (newTicketFormNativeElem.checkValidity() == true) {
+                    // the form is valid
+                    var serializedFormArray = newTicketFormElem.serializeArray();
+                    var data = {};
+
+                    $(serializedFormArray).each(function (index, elem) {
+                        data[elem['name']] = elem['value'];
+                    });
+
+                    var inputs = $('input', newTicketFormElem); // = $("#new-ticket-form input")
+                    disableInputs(inputs);
+
+                    // AJAX
+                    $.ajax({
+                        type: "POST",
+                        url: RESTURL + "/tickets",
+                        "data": data,
+                        dataType: "json"
+                    }).done(function (returnData) {
+                        console.log("returnData => ", returnData);
+                        newTicketFormElem.removeClass('was-validated');
+
+                        // reset form after successful submit
+                        newTicketFormNativeElem.reset();
+                        enableInputs(inputs);
+
+                        showAlert(newTicketFormElem, 'dark', 'You successfully saved your ticket!');
+                        refreshTicketList();
+                    }).fail(function () {
+                        alert("Failed to reach server");
+                        enableInputs(inputs);
+                        showAlert(newTicketFormElem, 'warning', 'Failed to reach the server');
+                    });
+                }
+
+                if (newTicketFormElem.hasClass('was-validated') == false) {
+                    newTicketFormElem.addClass('was-validated');
+                }
+            });
+
+        });
+
+
+    </script>
+</body>
+
+</html>

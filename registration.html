@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ticket BAZAAR | Registration</title>
+    <link rel="stylesheet" href="lib/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+        <link rel="icon" type="image/svg+xml" href="images/ticket.svg"/>
+</head>
+
+<body id="loginBody" style="font-family: 'Work Sans', sans-serif;">
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top navbar-expand-md" role="navigation">
+        <div class="container" style="border:transparent;">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="small-logo-container">
+                    <a class="small-logo" href="#">Ticket
+                        <i class="fas fa-ticket-alt"></i> BAZAAR</a>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="events.html">Events</a>
+                    </li>
+                    <li>
+                        <a href="tickets.html">Tickets</a>
+                    </li>
+                    <li class="active">
+                        <a href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+
+    <!-- ALERTS -->
+    <div class="row justify-content-center">
+        <div class="dangerAlertBox signUpAlert">
+            <ul></ul>
+        </div>
+        <div class="successAlertBox">
+            <span class="alert-message">Registration successful!
+                <br>Please login
+                <a href="login.html" style="cursor: pointer;">HERE</a>
+            </span>
+        </div>
+    </div>
+
+    <!-- REGISTRATION FORM -->
+
+    <div class="container pt-2 mt-2">
+        <div class="row">
+            <div class="col-12 col-md-5 mx-auto">
+                <form id="loginForm">
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="firstNameInput">First Name</label>
+                            <input type="text" class="form-control input-sm" id="firstNameInput" placeholder="First name" autofocus>
+                        </div>
+                        <div class="col">
+                            <label for="lastNameInput">Last Name</label>
+                            <input type="text" class="form-control input-sm" id="lastNameInput" placeholder="Last name">
+                        </div>
+                    </div>
+                    <div class="form-group" style="font-weight: lighter;">
+                        <label for="emailAddress">Email address</label>
+                        <input type="email" class="form-control input-sm" id="emailAddress" aria-describedby="emailHelp" placeholder="Enter email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control input-sm" id="password" placeholder="Password">
+                        <small>At least 6 characters.</small>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="passwordAgain">Verify Password</label>
+                        <input type="password" class="form-control input-sm" id="passwordAgain" placeholder="Password Again">
+                    </div>
+
+                    <div class="form-check mb-5">
+                        <input type="checkbox" class="form-check-input" id="tcCheckbox">
+                        <label class="form-check-label" for="tcCheckbox">I agree with the
+                            <a href="#" style="color:white; text-decoration:underline;">Terms and Conditions.</a>
+                        </label>
+                    </div>
+
+                    <!-- REGISTRATION BUTTON -->
+                    <div style="text-align: center; margin-bottom: 10px;">
+                        <button class="btn three" id="signUpBtn">SIGN UP</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <!-- FOOTER -->
+    <footer class="py-5">
+        <div class="row justify-content-center">
+
+            <div class="col-3">
+                <p>
+                    <strong>HELP</strong>
+                </p>
+                <p>Customer Service
+                    <br> Terms and Consitions</p>
+            </div>
+            <div class="col-3">
+                <p>
+                    <strong>CONTACT US</strong>
+                </p>
+                <p>Mail us
+                    <br> Visit us</p>
+            </div>
+
+            <div class="col-3">
+                <p>
+                    <strong>Sign Up for the newsletter</strong> Lorem ipsum dolor sit.</p>
+                <form class="row">
+                    <div class="col-4">
+                        <button type="submit" class="btn btn-light">JOIN US</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row footer-stuff justify-content-center pt-5">
+            <div class="col-6">
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="js/functions.js"></script>
+</body>
+
+</html>

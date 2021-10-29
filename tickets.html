@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ticket BAZAAR | Tickets</title>
+    <link rel="stylesheet" href="lib/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="images/ticket.svg"/>
+</head>
+
+<body style="font-family: 'Work Sans', sans-serif;">
+
+    <!-- Fixed navbar -->
+    <div id="eventsNav" class="navbar navbar-inverse navbar-fixed-top navbar-expand-md" role="navigation">
+        <div class="container" style="border:transparent;">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="small-logo-container">
+                    <a id="eventsNavLogo" class="small-logo" href="index.html">Ticket
+                        <i class="fas fa-ticket-alt"></i> BAZAAR</a>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="events.html">Events</a>
+                    </li>
+                    <li class="active">
+                        <a href="tickets.html">Tickets</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+
+    <div class="row">
+
+        <!-- TITLE -->
+        <div class="col-12 col-md-6 m-5 p-5 mx-auto">
+            <h1>
+                <strong>Check out the actual tickets</strong> | Arts and Theatre | Festivals and Fairs</h1>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, provident iste et quisquam, obcaecati unde
+                repudiandae
+                earum optio libero id explicabo inventore repellat fuga illo dolorem eligendi vitae consequatur
+                pariatur
+                reiciendis sequi.
+            </p>
+            <hr>
+        </div>
+    </div>
+
+
+    <!-- NEW TICKET -->
+    <div class="row justify-content-center mb-3">
+
+        <!-- SEARCHFIELD -->
+        <div class="col-12 col-lg-7">
+            <form class="form-inline my-2 my-lg-0">
+                <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-sm btn-outline-dark btnSearch" type="submit">
+                    <i class="fab fa-sistrix"></i>
+                </button>
+            </form>
+        </div>
+
+
+        <div class="col-12 col-lg-2">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-sm btn-outline-dark newTicket" data-toggle="modal" data-target="#newTicketModal">
+                <i class="fas fa-plus"></i> New Ticket
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="newTicketModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 style="font-size: 20px;" class="modal-title" id="exampleModalLabel">
+                                <i class="fas fa-plus"></i>
+                                <strong>Add new ticket</strong>
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+
+                        </div>
+                        <div class="modal-body">
+                            <div class="row justify-content-center mb-3">
+                                <div class="col">
+
+                                    <form id="new-ticket-form" novalidate>
+
+                                        <!-- event -->
+                                        <div class="form-group mb-3">
+                                            <input type="hidden" name="event" id="event" class="form-control">
+                                            <label for="eventId">Event name</label>
+                                            <select name="eventId" id="eventId" class="form-control" type="text"
+                                                placeholder="Event name" required>
+                                                <option></option>
+                                            </select>
+                                        </div>
+                                        <!-- genre -->
+                                        <div class="form-group mb-3 pb-3">
+                                            <label for="genre">Please choose the genre of your event</label>
+                                            <select name="genre" id="genre" class="custom-select" style="height: 30px;"
+                                                required>
+                                                <option value="Ballet">Ballet</option>
+                                                <option value="Concert">Concert</option>
+                                                <option value="Exhibition">Exhibition</option>
+                                                <option value="Theatre">Theatre</option>
+                                            </select>
+
+                                        </div>
+
+                                        <!-- date -->
+                                        <div class="form-group mb-3">
+                                            <label for="dateofevent">
+                                                <i class="far fa-calendar-alt"></i> Date</label>
+                                            <br>
+                                            <input name="date" id="dateofevent" required>
+                                        </div>
+
+
+                                        <!-- location -->
+                                        <div class="form-group mb-3 pb-3">
+                                            <label for="location">
+                                                <i class="fas fa-map-marker-alt"></i> Location</label>
+                                            <select name="location" id="location" class="custom-select" style="height: 30px;"
+                                                required>
+                                                <option value="Museum of Modern Arts">Museum of Modern Arts</option>
+                                                <option value="National Gallery">National Gallery</option>
+                                                <option value="Royal Ballet London">Royal Ballet London</option>
+                                                <option value="The Old Vic Theatre">The Old Vic Theatre</option>
+                                                <option value="Royal Albert Hall">Royal Albert Hall</option>
+                                                <option value="The British Museum">The British Museum</option>
+                                            </select>
+
+                                        </div>
+
+                                        <!-- Seller -->
+                                        <div class="form-group mb-3">
+                                            <label for="seller">
+                                                <i class="fas fa-user-tie"></i> Seller</label>
+                                            <input name="seller" id="seller" class="form-control" type="text"
+                                                placeholder="Seller" required>
+                                        </div>
+
+                                        <!-- how many? -->
+                                        <div class="form-group mb-3">
+                                            <label for="quantity">How many tickets would you like to sell?</label>
+                                            <input name="quantity" id="quantity" class="form-control" type="number"
+                                                placeholder="How many tickets would you like to sell?" required>
+                                        </div>
+
+                                        <!-- submit button -->
+                                        <div class="row justify-content-center mt-5">
+                                            <div class="col-6 text-center">
+                                                <input type="submit" class="btn btn-sm btn-dark newTicket" value="Save"></input>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- TICKETS TABLE -->
+    <div class="row justify-content-center">
+        <div class="col-12 col-lg-9">
+            <table class="table table-hover" id="ticket-list">
+                <thead>
+                    <tr>
+                        <th data-key="id" scope="col">Ticket ID
+                            <i class="fas fa-sort-up"></i>
+                            <i class="fas fa-sort-down"></i>
+                        </th>
+                        <th data-key="event" scope="col">Event
+                            <i class="fas fa-sort-up"></i>
+                            <i class="fas fa-sort-down"></i>
+                        </th>
+                        <th data-key="genre" scope="col">Genre
+                            <i class="fas fa-sort-up"></i>
+                            <i class="fas fa-sort-down">
+                        </th>
+                        <th data-key="date" scope="col">Date
+                            <i class="fas fa-sort-up"></i>
+                            <i class="fas fa-sort-down">
+                        </th>
+                        <th data-key="location" scope="col">Location
+                            <i class="fas fa-sort-up"></i>
+                            <i class="fas fa-sort-down"></i>
+                        </th>
+                        <th data-key="seller" scope="col">Seller
+                            <i class="fas fa-sort-up"></i>
+                            <i class="fas fa-sort-down"></i>
+                        </th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Do my bid</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row justify-content-center pt-2">
+
+        <!-- PAGINATION -->
+        <nav aria-label="Ticket navigation" id="ticket-list-paginator">
+            <ul class="pagination pagination-sm">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous" data-paginate-size="prev">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#" data-paginate-size="1">1</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#" data-paginate-size="2">2</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#" data-paginate-size="3">3</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next" data-paginate-size="next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <!-- TEMPLATE -->
+    <div class="template" style="display: none;">
+        <table>
+            <tr class="parentTR">
+                <td></td>
+                <th scope="row" class="ticketvalue"></th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="text-center"></td>
+                <td class="text-center">
+                    <a href='#'>
+                        <i class='fas fa-angle-double-right'></i>
+                    </a>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+    <div style="height: 100px;">
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="eventsFooter" class="mt-5">
+        <div class="row justify-content-center">
+
+            <div class="col-3">
+                <p>
+                    <strong>HELP</strong>
+                </p>
+                <p>Customer Service
+                    <br> Terms and Consitions</p>
+            </div>
+            <div class="col-3">
+                <p>
+                    <strong>CONTACT US</strong>
+                </p>
+                <p>Mail us
+                    <br> Visit us</p>
+            </div>
+
+            <div class="col-3">
+                <p>
+                    <strong>Sign Up for the newsletter</strong> Lorem ipsum dolor sit.</p>
+                <form class="row">
+                    <div class="col-4">
+                        <button type="submit" class="btn btn-light">JOIN US</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row footer-stuff justify-content-center pt-5">
+            <div class="col-6">
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/popper.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <!-- <script src="js/ticketfunctions.js"></script> -->
+    <script src="js/tickets-table.js"></script>
+</body>
+
+</html>

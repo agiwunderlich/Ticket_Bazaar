@@ -1,0 +1,941 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:300");
+
+body {
+  font-family: "Work Sans", sans-serif;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+figure {
+  margin: auto;
+}
+
+.content {
+  position: relative;
+  background: white;
+  margin-bottom: 400px;
+  overflow: hidden;
+}
+
+article {
+  padding: 100px 0;
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Parallax header */
+.festival {
+  position: relative;
+  height: 600px; 
+  background-image: url(../images/background_new.jpg);
+  background-attachment: fixed;
+  background-position-y: -180px;
+  background-size:     cover;                      /* <------ */
+  background-repeat:   no-repeat;
+  background-position: center center;    
+}
+
+.logo {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 40%;
+}
+
+.maintitle {
+  text-align: center;
+}
+
+ /* .foreblurred {
+  width: 960px;
+  height: 907px;
+  background-image: url(../images/foreblurred.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  position: absolute;
+  left: 50%;
+  margin-left: -220px;
+  top: 320px;
+}
+
+.backblurred {
+  width: 960px;
+  height: 567px;
+  background-image: url(../images/backblurred.png);
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  top: 180px;
+  left: -50px;
+  position: absolute;
+}  */
+
+/* Ticket bazaar title */
+
+.ml5 {
+  position: relative;
+  font-weight: 300;
+  font-size: 4.5em;
+  color: white;
+}
+
+.ml5 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  line-height: 1em;
+}
+
+.ml5 .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  transform-origin: 0.5 0;
+}
+
+.ml5 .ampersand {
+  font-family: Baskerville, "EB Garamond", serif;
+  font-style: italic;
+  font-weight: 400;
+  width: 1em;
+  margin-right: -0.1em;
+  margin-left: -0.1em;
+}
+
+.ml5 .letters {
+  display: inline-block;
+  opacity: 0;
+}
+
+/* lead title arts and festivals */
+.ml12 {
+  font-weight: 200;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  color: white;
+}
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+/* *********************************
+            TICKETS GRID
+  ********************************** */
+
+div.tickets figure {
+  margin-bottom: 20px;
+  position: relative;
+  opacity: 0;
+  transform: translate(30px);
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+div.tickets figure.is-showing {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+div.tickets figure img {
+  display: block;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+div.tickets figure:hover figcaption {
+  left: 0%;
+}
+
+div.tickets figure:hover img {
+  transform: scale(1.1);
+}
+
+div.tickets figure figcaption {
+  position: absolute;
+  bottom: 10px;
+  left: -100%;
+  background: black;
+  color: white;
+  padding: 2px 8px;
+  font-size: 11px;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+/* *********************************
+            PERISCOPE
+  ********************************** */
+.periscope {
+  height: 640px;
+  background-image: url(../images/periscope.jpg);
+  background-position: center 0px;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  border-radius: 50%;
+  position: relative;
+}
+
+div.periscope div.window-tint {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.promo-text {
+  color: white;
+  font-weight: 100;
+  font-size: 50px;
+  line-height: 1.2;
+}
+
+div.promo-text strong {
+  display: block;
+  font-size: 30px;
+}
+
+div.promo-text strong span {
+  font-weight: 300;
+  font-size: 18px;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+div.promo-text a.window-cta {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+div.promo-text a.window-cta:hover {
+  background-color: white;
+  color: black;
+}
+
+/* *********************************
+            BLOGPOSTS
+  ********************************** */
+
+div.blog-posts {
+  margin-top: 100px;
+}
+
+div.post {
+  border: 1px solid #e1e1e1;
+  box-shadow: 2px 2px 2px lightgrey;
+  border-radius: 4px;
+  padding: 20px 20px;
+  background: white;
+  position: relative;
+}
+
+div.post-1 {
+  transform: translate(100px, 20px);
+  left: -20px;
+}
+
+div.post-2 {
+  z-index: 2;
+}
+
+div.post-3 {
+  transform: translate(-100px, 20px);
+  right: -20px;
+}
+
+/* *********************************
+            FOOTER
+  ********************************** */
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 40px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+footer div.footer-stuff {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+footer div.footer-stuff a {
+  color: white;
+}
+
+div.footer-stuff ul {
+  list-style-type: none;
+}
+
+div.footer-stuff li {
+  float: left;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+/* *********************************
+                NAVBAR
+  ********************************** */
+.navbar-inverse {
+  border: none;
+  background-color: transparent;
+  border-color: rgba(0, 0, 0, 0);
+}
+
+.navbar {
+  background-color: transparent;
+}
+
+div.navbar.navbar-inverse.navbar-fixed-top.navbar-expand-md {
+  border: transparent;
+  background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  background-color: transparent !important;
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  border-color: transparent;
+  background: transparent;
+}
+@media (max-width: 767px) {
+  .navbar-inverse .navbar-collapse,
+  .navbar-inverse .navbar-form {
+    background: black;
+  }
+}
+
+.small-logo-container {
+  padding-top: 50px;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+.small-logo,
+a.small-logo:hover {
+  color: white;
+  font-size: 2.5em;
+  padding-bottom: 2px;
+  text-decoration: none;
+}
+
+/* *********************************
+             LOGIN PAGE
+********************************** */
+
+#loginBody {
+  background-image: url(../images/background_new.jpg);
+  background-position-y: -180px;
+  background-attachment: fixed;
+}
+
+#loginForm {
+  position: relative;
+  top: 130px;
+  color: white;
+}
+
+#loginForm label {
+  font-family: "Work Sans", sans-serif;
+}
+
+label.form-check-label {
+  position: relative;
+  left: 15px;
+  font-weight: lighter;
+}
+
+div.form-check {
+  position: relative;
+  left: -12px;
+}
+
+#registrationHelp {
+  padding-top: 20px;
+}
+
+#registrationHelp a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* LOGIN BUTTON */
+
+.section {
+  text-align: center;
+}
+
+button.three {
+  background: #d84e2c;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  display: inline-block;
+  /* margin: 100px 0; */
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+  padding: 10px 20px;
+  letter-spacing: 0.1em;
+  transition: all 300ms;
+  border-radius: 3px;
+}
+
+button.three:hover {
+  box-shadow: 2px 2px 0px white, 4px 4px 0px #d84e2c;
+  top: -4px;
+  left: -4px;
+  color: white;
+}
+
+button.three:focus {
+  color: white;
+  box-shadow: 2px 2px 0px white, 4px 4px 0px #d84e2c;
+}
+
+div.dangerAlertBox {
+  width: 250px;
+  height: 50px;
+  border: 1px solid #d84e2c;
+  border-radius: 4px;
+  position: relative;
+  top: 160px;
+  color: white;
+  padding: 7px;
+  background-color: rgba(216,78,44,0.7);
+  line-height: 15px;
+}
+
+div.successAlertBox{
+  width: 250px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 4px;
+  position: relative;
+  top: 120px;
+  color: white;
+  padding: 7px;
+  background-color: rgba(0, 0, 0, 0.5);
+  line-height: 15px;
+  display: none;
+}
+
+span.alert-message {
+  font-size: 11px;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+}
+
+div.signUpAlert ul {
+  font-size: 11px;
+  list-style-type: none;
+  line-height: 15px; 
+}
+
+div.signUpAlert {
+  padding-top: 3px;
+  display: none;
+  top: 120px;
+}
+
+
+
+/* *********************************
+             EVENTS PAGE
+********************************** */
+
+#eventsNav {
+  background-color: black;
+  position: fixed;
+}
+
+#eventsNavLogo {
+  position: relative;
+  top: -40px;
+  font-size: 1.5em;
+}
+
+div.events figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  background: #2f3238;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+div.events figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.8;
+}
+
+div.events figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1em;
+  backface-visibility: hidden;
+}
+
+div.events figure figcaption::before,
+div.events figure figcaption::after {
+  pointer-events: none;
+}
+
+div.events figure figcaption,
+div.events figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+div.events figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+div.events figure h4 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+}
+
+div.events figure h4 span {
+  font-weight: 800;
+}
+
+div.events figure h4,
+div.events figure p {
+  margin: 0;
+}
+
+div.events figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+
+figure.effect {
+  background: #2f3238;
+}
+
+figure.effect img {
+  max-width: none;
+  transition: opacity 1s, transform 1s;
+}
+
+figure.effect figcaption {
+  text-align: left;
+}
+
+figure.effect h4 {
+  position: relative;
+  padding: 0.5em 0;
+}
+
+figure.effect p {
+  display: inline-block;
+  margin: 0 0 0.25em;
+  padding: 0.4em 1em;
+  background: rgba(255, 255, 255, 0.9);
+  color: #2f3238;
+  text-transform: none;
+  font-weight: 500;
+  font-size: 75%;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-360px, 0, 0);
+  transform: translate3d(-360px, 0, 0);
+}
+
+figure.effect p:first-child {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+figure.effect p:nth-of-type(2) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+figure.effect p:nth-of-type(3) {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+
+figure.effect:hover p:first-child {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+figure.effect:hover p:nth-of-type(2) {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+
+figure.effect:hover p:nth-of-type(3) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+figure.effect:hover img {
+  opacity: 0.4;
+  -webkit-transform: scale3d(1.1, 1.1, 1);
+  transform: scale3d(1.1, 1.1, 1);
+}
+
+figure.effect:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+div.events {
+  position: relative;
+}
+
+#eventsFooter {
+  position: relative;
+}
+
+
+/* events */
+
+/* Common style */
+.grid figure {
+	position: relative;
+	overflow: hidden;
+	margin: 10px 1%;
+	min-width: 200px;
+	max-width: 280px;
+	max-height: 360px;
+	width: 48%;
+	height: auto;
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+  opacity: 0.8;
+  border-radius: 5%;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+/* icons */
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 30px;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+div.grid figure h4 {
+	word-spacing: -0.15em;
+  font-weight: 300;
+  font-size: 18px;
+  color: black;
+}
+
+.grid figure h4 span {
+	font-weight: 800;
+}
+
+.grid figure h4,
+.grid figure p {
+  margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+/* KIRA effect */
+
+figure.effect-kira {
+	background: #fff;
+  text-align: left;
+  float: left;
+}
+
+figure.effect-kira img {
+	-webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+  filter:opacity(40%);
+}
+
+figure.effect-kira figcaption {
+	z-index: 1;
+}
+
+figure.effect-kira p {
+	padding: 2.25em 0.5em;
+	font-weight: 600;	
+	font-size: 100%;
+	line-height: 1.5;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,-10px,0);
+	transform: translate3d(0,-10px,0);
+}
+
+figure.effect-kira p span {
+	margin: 0 0.5em;
+  color: #101010;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+figure.effect-kira p span:hover,
+figure.effect-kira p span:focus {
+	opacity: 0.6;
+}
+
+figure.effect-kira figcaption::before {
+	position: absolute;
+	top: 10px;
+	right: 2em;
+	left: 2em;
+	z-index: -1;
+	height: 3.1em;
+	background: #fff;
+	content: '';
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,4em,0) scale3d(1,0.023,1) ;
+	transform: translate3d(0,4em,0) scale3d(1,0.023,1);
+	-webkit-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+}
+
+figure.effect-kira:hover img {
+	opacity: 0.5;
+}
+
+figure.effect-kira:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-kira:hover figcaption::before {
+	opacity: 0.7;
+	-webkit-transform: translate3d(0,5em,0) scale3d(1,1,1) ;
+	transform: translate3d(0,5em,0) scale3d(1,1,1);
+}
+
+/* New Event Form Validation */
+
+.form-group.invalid input,
+.form-group.invalid select {
+  border-color: red;
+}
+
+.form-group.invalid .invalid-feedback {
+  display: block;
+}
+
+.preview-holder img{
+  width:160px;
+  margin: 10px auto;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #999;
+  border-width: 1px;
+  display: inline-block;
+}
+
+#newEventSaveBtn {
+  position: relative;
+  top: 20px;
+}
+
+
+/* *********************************
+             TICkETS PAGE
+********************************** */
+
+thead {
+  box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+tbody {
+  color: #808080;
+}
+
+.newTicket {
+  position: relative;
+  top: 3px;
+}
+
+button.newTicket:hover {
+  color: white;
+}
+
+button.btnSearch:hover {
+  color: white;
+}
+
+#searchInput:focus {
+  border-color: #616364;
+  box-shadow: 0 0 0 2px rgba(118, 119, 118, 0.25);
+}
+
+#searchInput {
+  border-radius: 20px;
+}
+
+/* date */
+[type="date"] {
+  background: #fff
+    url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)
+    97% 50% no-repeat;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+input#dateofevent {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 12px;
+  width: 458px;
+  height: 34px;
+  padding-left: 8px;
+}
+
+div.modal-header {
+  text-align: center;
+}
+
+li.page-item a.page-link {
+  color: black;
+}
+
+tr.parentTR td i {
+  color: #d84e2c;
+  cursor: pointer;
+}
+
+table.table-hover thead th {
+  cursor: pointer;
+}
+
+table.table-hover thead th i.fa-sort-up, table.table-hover thead th i.fa-sort-down {
+  display: none;
+}
+
+table.table-hover thead th.up i.fa-sort-up,
+table.table-hover thead th.down i.fa-sort-down  {
+  display: inline;
+}
+
+li.page-item.active a.page-link {
+  background-color: #808080;
+  border-color: #808080;
+}
+
+
+
+/* *********************************
+             PROFILE PAGE
+********************************** */
+img.profilePic {
+  border-radius: 50%;
+  width: 60%;
+}
+
+div.user-detail {
+  border: 1px solid lightgrey;
+  border-radius: 2%;
+  border-bottom: none;
+  box-shadow: 5px 4px 8px 1px lightgrey;
+  height: 400px;
+  margin: -70px 150px 0px 150px;
+  background-color: white;
+}
+
+footer.profileFooter {
+  position: unset;
+}

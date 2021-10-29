@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ticket BAZAAR | Events</title>
+    <link rel="stylesheet" href="lib/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="images/ticket.svg"/>
+</head>
+
+<body style="font-family: 'Work Sans', sans-serif;">
+
+    <!-- Fixed navbar -->
+    <div id="eventsNav" class="navbar navbar-inverse navbar-fixed-top navbar-expand-md" role="navigation">
+        <div class="container" style="border:transparent;">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="small-logo-container">
+                    <a id="eventsNavLogo" class="small-logo" href="index.html">Ticket
+                        <i class="fas fa-ticket-alt"></i> BAZAAR</a>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="active">
+                        <a href="events.html">Events</a>
+                    </li>
+                    <li>
+                        <a href="tickets.html">Tickets</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+
+        <!-- TITLE -->
+        <div class="col-10 col-md-6 mt-5 p-5 mx-auto">
+            <h1>
+                <strong>Check out the actual events</strong> | Arts and Theatre | Festivals and Fairs</h1>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, provident iste et quisquam, obcaecati unde
+                repudiandae
+                earum optio libero id explicabo inventore repellat fuga illo dolorem eligendi vitae consequatur
+                pariatur
+                reiciendis sequi.
+            </p>
+            <hr>
+        </div>
+    </div>
+
+    <!-- <div class="row justify-content-end mb-5">
+        <div class="col-lg-5">
+            <form class="form-inline my-2 my-lg-0">
+                <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-sm btn-outline-dark btnSearch" type="submit">
+                    <i class="fab fa-sistrix"></i>
+                </button>
+            </form>
+        </div>
+    </div> -->
+
+
+    <!-- CARDS -->
+    <div class="container events">
+        <div class="row mx-auto justify-content-center">
+            <figure class="col-3 effect p-0">
+                <img class="card-img" src="images/museum3.jpg" alt="modernmuseum">
+                <figcaption class="card-img-overlay m-3">
+                    <h4 class="card-title">Museum of
+                        <span>Modern Arts</span>
+                    </h4>
+                    <div>
+                        <p class="card-text">This is a wider card with supporting to additional.</p>
+                        <p class="card-text"> This content is a little bit longer.</p>
+                        <p class="card-text">Last updated 3 mins ago</p>
+                    </div>
+                    <a href="#museumModern">View more</a>
+                </figcaption>
+            </figure>
+
+
+            <figure class="col-3 effect p-0">
+                <img class="card-img" src="images/museum2.jpg" alt="nationalgallery">
+                <figcaption class="card-img-overlay m-3">
+                    <h4 class="card-title">National
+                        <span>Gallery</span>
+                    </h4>
+                    <div>
+                        <p class="card-text">This is a wider card with supporting to additional.</p>
+                        <p class="card-text"> This content is a little bit longer.</p>
+                        <p class="card-text">Last updated 3 mins ago</p>
+                    </div>
+                    <a href="#nationalGallery">View more</a>
+                </figcaption>
+            </figure>
+
+            <figure class="col-3 effect p-0">
+                <img class="card-img" src="images/balett1.gif" alt="royalballet">
+                <figcaption class="card-img-overlay m-3">
+                    <h4 class="card-title">Royal Ballet
+                        <span>London</span>
+                    </h4>
+                    <div>
+                        <p class="card-text">This is a wider card with supporting to additional.</p>
+                        <p class="card-text"> This content is a little bit longer.</p>
+                        <p class="card-text">Last updated 3 mins ago</p>
+                    </div>
+                    <a href="#royalBallet">View more</a>
+                </figcaption>
+            </figure>
+
+
+        </div>
+
+        <div class="row mx-auto my-2 justify-content-center">
+
+            <figure class="col-3 effect p-0">
+                <img class="card-img" src="images/theatre1.jpg" alt="oldvictheatre">
+                <figcaption class="card-img-overlay m-3">
+                    <h4 class="card-title">The Old Vic
+                        <span>Theatre</span>
+                    </h4>
+                    <div>
+                        <p class="card-text">This is a wider card with supporting to additional.</p>
+                        <p class="card-text"> This content is a little bit longer.</p>
+                        <p class="card-text">Last updated 3 mins ago</p>
+                    </div>
+                    <a href="#oldVicTheatre">View more</a>
+                </figcaption>
+            </figure>
+
+            <figure class="col-3 effect p-0">
+                <img class="card-img" src="images/concert1.jpg" alt="royalalberthall">
+                <figcaption class="card-img-overlay m-3">
+                    <h4 class="card-title">Royal Albert
+                        <span>Hall</span>
+                    </h4>
+                    <div>
+                        <p class="card-text">This is a wider card with supporting to additional.</p>
+                        <p class="card-text"> This content is a little bit longer.</p>
+                        <p class="card-text">Last updated 3 mins ago</p>
+                    </div>
+                    <a href="#royalAlbertHall">View more</a>
+                </figcaption>
+            </figure>
+
+            <figure class="col-3 effect p-0">
+                <img class="card-img" src="images/museum.jpg" alt="britishmuseum">
+                <figcaption class="card-img-overlay m-3">
+                    <h4 class="card-title">The British
+                        <span>Museum</span>
+                    </h4>
+                    <div>
+                        <p class="card-text">This is a wider card with supporting to additional.</p>
+                        <p class="card-text"> This content is a little bit longer.</p>
+                        <p class="card-text">Last updated 3 mins ago</p>
+                    </div>
+                    <a href="#britishMuseum">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+
+    </div>
+
+    <div style="height: 100px;"></div>
+
+    <!-- # Genre Buttons -->
+    <div class="row justify-content-center mx-5">
+        <div class="col-10 text-center">
+            <button id="buttonExhibition" type="button" class="btn btn-dark mx-3">
+                # Exhibition <span class="badge badge-secondary">9</span>
+                <span class="sr-only">number of events of this event genre</span>
+            </button>
+
+            <button id="buttonTheatre" type="button" class="btn btn-dark mx-3">
+                # Theatre <span class="badge badge-secondary">12</span>
+                <span class="sr-only">number of events of this event genre</span>
+            </button>
+
+            <button id="buttonBallet" type="button" class="btn btn-dark mx-3">
+                # Ballet <span class="badge badge-secondary">4</span>
+                <span class="sr-only">number of events of this event genre</span>
+            </button>
+
+            <button id="buttonConcert" type="button" class="btn btn-dark mx-3">
+                # Concert <span class="badge badge-secondary">7</span>
+                <span class="sr-only">number of events of this event genre</span>
+            </button>
+        </div>
+    </div>
+    <!-- /# Genre Buttons -->
+
+    <div style="height: 50px;"></div>
+
+    <!-- NEW EVENT BUTTON -->
+    <div class="row justify-content-center py-5">
+        <div class="col-12 col-lg-2">
+            <!-- Button trigger modal -->
+            <button onclick="openNewEventModal()" type="button" class="btn btn-sm btn-outline-dark newTicket">
+                <i class="fas fa-plus"></i> New Event
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="newEventModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 style="font-size: 20px;" class="modal-title" id="exampleModalLabel">
+                                <i class="fas fa-plus"></i>
+                                <strong>Add new event</strong>
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+
+                        </div>
+                        <div class="modal-body">
+                            <div class="row justify-content-center mb-3">
+                                <div class="col">
+
+                                    <form callBack="startEventsPage" id="newEventForm" method="post" action="http://localhost:3000/events"
+                                        name="newEventForm" novalidate>
+
+                                        <!-- event -->
+                                        <div class="form-group mb-3">
+                                            <label for="event-name">Event name</label>
+                                            <input name="title" id="event-name" class="form-control" type="text"
+                                                placeholder="Event name" required>
+                                            <div class="invalid-feedback">
+                                                Please choose an eventname.
+                                            </div>
+                                        </div>
+
+                                        <!-- date -->
+                                        <div class="form-group mb-3">
+                                            <label for="dateofevent">
+                                                <i class="far fa-calendar-alt"></i> Date</label>
+                                            <br>
+                                            <input name="date" type="datetime-local" id="dateofevent" required>
+                                            <div class="invalid-feedback">
+                                                Please choose a date.
+                                            </div>
+                                        </div>
+
+                                        <!-- location -->
+                                        <div class="form-group mb-3 pb-3">
+                                            <label for="location">
+                                                <i class="fas fa-map-marker-alt"></i> Location</label>
+                                            <select name="location" id="location" class="custom-select" style="height: 30px;"
+                                                required>
+                                                <option value="Museum of Modern Arts">Museum of Modern Arts</option>
+                                                <option value="National Gallery">National Gallery</option>
+                                                <option value="Royal Ballet London">Royal Ballet London</option>
+                                                <option value="The Old Vic Theatre">The Old Vic Theatre</option>
+                                                <option value="Royal Albert Hall">Royal Albert Hall</option>
+                                                <option value="The British Museum">The British Museum</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Please choose a location.
+                                            </div>
+                                        </div>
+
+                                        <!-- image -->
+                                        <div class="form-group mb-3 pb-3">
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" name="image" id="image" style="line-height: 50px;" required>
+                                                <label class="custom-file-label" for="customFile">Please choose an image for your event</label>
+                                                <div class="preview-holder text-center"><img src="images/image_preview.png"></div>
+                                            </div>
+                                            <div class="invalid-feedback">
+                                                Please choose an image.
+                                            </div>
+                                        </div>
+
+
+                                        <!-- submit button -->
+                                        <div class="row justify-content-center mt-5">
+                                            <div class="col-6 text-center">
+                                                <button type="submit" class="btn btn-sm btn-dark newTicket" id="newEventSaveBtn" value="Save">Save</button>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- / NEW EVENT BUTTON -->
+
+    <div style="height: 50px;"></div>
+
+
+    <!-- RENDER -->
+
+    <!-- <div class="container">
+        <div class="row m-5 p-5"> -->
+
+    <div class="display:block;" id="event-render"></div>
+    <!-- </div>
+    </div> -->
+
+    <!-- TEMPLATE -->
+
+    <div class="container" style="display:none;">
+        <div class="row m-5 p-5">
+            <div class="grid col-12" id="eventTemplate">
+                <div class="col">
+                    <figure class="effect-kira" style="display: inline !important;">
+                        <img src="images/event1collierschorr.jpg" alt="collier" />
+                        <figcaption>
+                            <h4></h4>
+                            <a href="#"></a>
+                            <p>
+                                <i style="color:black;" class="far fa-calendar-alt"></i><span> 03-12-2018 18:00</span>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- EVENTS -->
+    <div class="row container mt-5 justify-content-center">
+
+        <!-- ROW-1 MUSEUM OF MODERN ARTS -->
+        <div id="museumModern" class="row mx-5 px-5">
+
+            <!-- TITLE -->
+            <div class="col-10 col-md-6 mt-5 p-5">
+                <h1 class="display-4">
+                    <strong> | Museum of Modern Arts</strong>
+                </h1>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, provident iste et quisquam.
+                </p>
+                <hr>
+            </div>
+
+            <div class="grid col-12">
+                <div class="col">
+                    <figure class="effect-kira" style="display: inline !important;">
+                        <img src="images/event1collierschorr.jpg" alt="collier" />
+                        <figcaption>
+                            <h4>Collier Schorr
+                                <span>In Front of the Camera</span>
+                            </h4>
+                            <p>
+                                <!-- <a href="#">
+                                    <i class="fa fa-fw fa-heart"></i>
+                                </a> -->
+                                <a href="tickets.html?event=1">
+                                    <i class="fa fa-fw fa-share"></i>
+                                </a>
+                                <span style="color:black; font-size: 12px;">03-12-2018 18:00</span>
+                            </p>
+
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col">
+                    <figure class="effect-kira" style="display: inline !important;">
+                        <img src="images/event2evarotschild.jpg" alt="rotschild" />
+                        <figcaption>
+                            <h4>Eva Rotschild
+                                <span>Iceberg Hits</span>
+                            </h4>
+                            <p>
+                                <a href="#">
+                                    <i class="fa fa-fw fa-heart"></i>
+                                </a>
+                                <a href="tickets.html?event=2">
+                                    <i class="fa fa-fw fa-share"></i>
+                                </a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col">
+                    <figure class="effect-kira" style="display: inline !important;">
+                        <img style="filter: grayscale(100%); filter: opacity(40%);" src="images/event3davidaltmejd.jpg"
+                            alt="altmejd" />
+                        <figcaption>
+                            <h4>David Altmejd
+                                <span>Magic Loop</span>
+                            </h4>
+                            <p>
+                                <a href="#">
+                                    <i class="fa fa-fw fa-heart"></i>
+                                </a>
+                                <a href="tickets.html?event=3">
+                                    <i class="fa fa-fw fa-share"></i>
+                                </a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ROW-2 NATIONAL GALLERY -->
+
+        <div id="nationalGallery" class="row m-5 p-5">
+
+            <!-- TITLE -->
+            <div class="col-10 col-md-6 mt-5 p-5">
+                <h1 class="display-4">
+                    <strong> | National Gallery</strong>
+                </h1>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, provident iste et quisquam.
+                </p>
+                <hr>
+            </div>
+
+            <div class="grid col-12">
+                <div class="col">
+                    <figure class="effect-kira" style="display: inline !important;">
+                        <img style="filter: grayscale(100%); filter: opacity(40%);" src="images/event4edruscha.jpg" alt="ruscha" />
+                        <figcaption>
+                            <h4>Ed Ruscha
+                                <span>Course Of Empire</span>
+                            </h4>
+                            <p>
+                                <a href="#">
+                                    <i class="fa fa-fw fa-heart"></i>
+                                </a>
+                                <a href="tickets.html?event=4">
+                                    <i class="fa fa-fw fa-share"></i>
+                                </a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col">
+                    <figure class="effect-kira" style="display: inline !important;">
+                        <img src="images/event5manet.jpg" alt="manet" />
+                        <figcaption>
+                            <h4>Impressionists
+                                <span>From Manet to Cézanne</span>
+                            </h4>
+                            <p>
+                                <a href="#">
+                                    <i class="fa fa-fw fa-heart"></i>
+                                </a>
+                                <a href="tickets.html?event=5">
+                                    <i class="fa fa-fw fa-share"></i>
+                                </a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col">
+                    <figure class="effect-kira" style="display: inline !important;">
+                        <img src="images/event6sorolla.jpg" alt="sorolla" />
+                        <figcaption>
+                            <h4>Sorolla
+                                <span>Spanish Master of Light</span>
+                            </h4>
+                            <p>
+                                <a href="#">
+                                    <i class="fa fa-fw fa-heart"></i>
+                                </a>
+                                <a href="tickets.html?event=6">
+                                    <i class="fa fa-fw fa-share"></i>
+                                </a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ROW-3 ROYAL BALLET LONDON -->
+
+        <div id="royalBallet" class="row m-5 p-5">
+
+            <!-- TITLE -->
+            <div class="col-10 col-md-6 mt-5 p-5">
+                <h1 class="display-4">
+                    <strong> | Royal Ballet London</strong>
+                </h1>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, provident iste et quisquam.
+                </p>
+                <hr>
+            </div>
+
+            <div class="grid col-12">
+                <div class="col">
+                    <figure class="effect-kira" style="display: inline !important;">
+                        <img src="images/event7bayadere.jpg" alt="bayadere" />
+                        <figcaption>
+                            <h4>La Bayadere
+                                <span>Natalia Makarova's</span>
+                            </h4>
+                            <p>
+                                <a href="#">
+                                    <i class="fa fa-fw fa-heart"></i>
+                                </a>
+                                <a href="tickets.html?event=7">
+                                    <i class="fa fa-fw fa-share"></i>
+                                </a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col">
+                    <figure class="effect-kira" style="display: inline !important;">
+                        <img src="images/event8unknownsoldier.jpg" alt="unknownsoldier" />
+                        <figcaption>
+                            <h4>The Unknown Soldier
+                                <span>Infra / Symphony in C</span>
+                            </h4>
+                            <p>
+                                <a href="#">
+                                    <i class="fa fa-fw fa-heart"></i>
+                                </a>
+                                <a href="tickets.html?event=8">
+                                    <i class="fa fa-fw fa-share"></i>
+                                </a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col">
+                    <figure class="effect-kira" style="display: inline !important;">
+                        <img src="images/event9marguerite.jpg" alt="marguerite" />
+                        <figcaption>
+                            <h4>Marguerite and Armand
+                                <span></span>
+                            </h4>
+                            <p>
+                                <a href="#">
+                                    <i class="fa fa-fw fa-heart"></i>
+                                </a>
+                                <a href="tickets.html?event=9">
+                                    <i class="fa fa-fw fa-share"></i>
+                                </a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- ROW-4 THE OLD VIC THEATRE -->
+
+        <div id="oldVicTheatre" class="row m-5 p-5">
+
+            <!-- TITLE -->
+            <div class="col-10 col-md-6 mt-5 p-5">
+                <h1 class="display-4">
+                    <strong> | The Old Vic Theatre</strong>
+                </h1>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, provident iste et quisquam.
+                </p>
+                <hr>
+            </div>
+
+            <div class="grid col-12">
+                <div class="col">
+                    <figure class="effect-kira" style="display: inline !important;">
+                        <img src="images/event10salesman.jpg" alt="salesman" />
+                        <figcaption>
+                            <h4>Death of a
+                                <br>
+                                <span>Salesman</span>
+                            </h4>
+                            <p>
+                                <a href="#">
+                                    <i class="fa fa-fw fa-heart"></i>
+                                </a>
+                                <a href="tickets.html?event=10">
+                                    <i class="fa fa-fw fa-share"></i>
+                                </a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col">
+                    <figure class="effect-kira" style="display: inline !important;">
+                        <img src="images/event11virginiawoolf.jpg" alt="virginiawoolf" />
+                        <figcaption>
+                            <h4>Who is afraid of
+                                <span>Virginia Woolf?</span>
+                            </h4>
+                            <p>
+                                <a href="#">
+                                    <i class="fa fa-fw fa-heart"></i>
+                                </a>
+                                <a href="tickets.html?event=11">
+                                    <i class="fa fa-fw fa-share"></i>
+                                </a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col">
+                    <figure class="effect-kira" style="display: inline !important;">
+                        <img src="images/event12godot.jpg" alt="godot" />
+                        <figcaption>
+                            <h4>Waiting for
+                                <br>
+                                <span>Godot</span>
+                            </h4>
+                            <p>
+                                <a href="#">
+                                    <i class="fa fa-fw fa-heart"></i>
+                                </a>
+                                <a href="tickets.html?event=12">
+                                    <i class="fa fa-fw fa-share"></i>
+                                </a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- ROW-5 ROYAL ALBERT HALL -->
+
+        <div id="royalAlbertHall" class="row m-5 p-5">
+
+            <!-- TITLE -->
+            <div class="col-10 col-md-6 mt-5 p-5">
+                <h1 class="display-4">
+                    <strong> | Royal Albert Hall</strong>
+                </h1>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, provident iste et quisquam.
+                </p>
+                <hr>
+            </div>
+
+            <div class="grid col-12">
+                <div class="col">
+                    <figure class="effect-kira" style="display: inline !important;">
+                        <img src="images/event13florence.jpg" alt="florence" />
+                        <figcaption>
+                            <h4>Florence
+                                <span>and the Machine</span>
+                            </h4>
+                            <p>
+                                <a href="#">
+                                    <i class="fa fa-fw fa-heart"></i>
+                                </a>
+                                <a href="tickets.html?event=13">
+                                    <i class="fa fa-fw fa-share"></i>
+                                </a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col">
+                    <figure class="effect-kira" style="display: inline !important;">
+                        <img src="images/event14bjork.jpg" alt="bjork" />
+                        <figcaption>
+                            <h4>Björk
+                                <span>Utopia Tour Birmingham</span>
+                            </h4>
+                            <p>
+                                <a href="#">
+                                    <i class="fa fa-fw fa-heart"></i>
+                                </a>
+                                <a href="tickets.html?event=14">
+                                    <i class="fa fa-fw fa-share"></i>
+                                </a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col">
+                    <figure class="effect-kira" style="display: inline !important;">
+                        <img src="images/event15royalbloodgif.gif" alt="royalblood" />
+                        <figcaption>
+                            <h4>Royal Blood
+                                <span>Lights Out Tour London</span>
+                            </h4>
+                            <p>
+                                <a href="#">
+                                    <i class="fa fa-fw fa-heart"></i>
+                                </a>
+                                <a href="tickets.html?event=15">
+                                    <i class="fa fa-fw fa-share"></i>
+                                </a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ROW-6 THE BRITISH MUSEUM -->
+
+        <div id="britishMuseum" class="row m-5 p-5">
+
+            <!-- TITLE -->
+            <div class="col-10 col-md-6 mt-5 p-5">
+                <h1 class="display-4">
+                    <strong> | The British Museum</strong>
+                </h1>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, provident iste et quisquam.
+                </p>
+                <hr>
+            </div>
+
+            <div class="grid col-12">
+                <div class="col">
+                    <figure class="effect-kira" style="display: inline !important;">
+                        <img src="images/event16caravaggio.jpg" alt="caravaggio" />
+                        <figcaption>
+                            <h4>Caravaggio -
+                                <span>Realistic Observation</span>
+                            </h4>
+                            <p>
+                                <a href="#">
+                                    <i class="fa fa-fw fa-heart"></i>
+                                </a>
+                                <a href="tickets.html?event=16">
+                                    <i class="fa fa-fw fa-share"></i>
+                                </a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col">
+                    <figure class="effect-kira" style="display: inline !important;">
+                        <img src="images/event17ophelia.jpg" alt="ophelia" />
+                        <figcaption>
+                            <h4>John Everett Millais
+                                <span>Ophelia</span>
+                            </h4>
+                            <p>
+                                <a href="#">
+                                    <i class="fa fa-fw fa-heart"></i>
+                                </a>
+                                <a href="tickets.html?event=17">
+                                    <i class="fa fa-fw fa-share"></i>
+                                </a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col">
+                    <figure class="effect-kira" style="display: inline !important;">
+                        <img src="images/event18michelangelo.jpg" alt="michelangelo" />
+                        <figcaption>
+                            <h4>Michelangelo
+                                <span>The other polyhistor</span>
+                            </h4>
+                            <p>
+                                <a href="#">
+                                    <i class="fa fa-fw fa-heart"></i>
+                                </a>
+                                <a href="tickets.html?event=18">
+                                    <i class="fa fa-fw fa-share"></i>
+                                </a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- FOOTER -->
+    <footer id="eventsFooter" class="mt-5">
+        <div class="row justify-content-center">
+
+            <div class="col-3">
+                <p>
+                    <strong>HELP</strong>
+                </p>
+                <p>Customer Service
+                    <br> Terms and Consitions</p>
+            </div>
+            <div class="col-3">
+                <p>
+                    <strong>CONTACT US</strong>
+                </p>
+                <p>Mail us
+                    <br> Visit us</p>
+            </div>
+
+            <div class="col-3">
+                <p>
+                    <strong>Sign Up for the newsletter</strong> Lorem ipsum dolor sit.</p>
+                <form class="row">
+                    <div class="col-4">
+                        <button type="submit" class="btn btn-light">JOIN US</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row footer-stuff justify-content-center py-5 my-5">
+            <div class="col-6">
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/popper.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <!-- <script src="js/functions.js"></script> -->
+    <script src="js/ticketfunctions.js"></script>
+    <script src="js/events.js"></script>
+
+</body>
+
+</html>
